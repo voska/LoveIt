@@ -1,5 +1,5 @@
-iframe.instagram-media {
-  .dark-theme & {
+@media (prefers-color-scheme: dark) {
+  iframe.instagram-media {
     border: none !important;
   }
 }

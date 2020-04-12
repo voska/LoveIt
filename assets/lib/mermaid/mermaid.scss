@@ -8,8 +8,8 @@
   }
 
   @import "themes/neutral/index";
+}
 
-  .dark-theme & {
-    @import "themes/dark/index";
-  }
+@media (prefers-color-scheme: dark) {
+  @import "themes/dark/index";
 }

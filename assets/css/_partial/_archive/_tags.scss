@@ -20,18 +20,24 @@
       -ms-transform: scale(1.2);
       -o-transform: scale(1.2);
       transform: scale(1.2);
-
-      .dark-theme & {
-        color: $global-link-hover-color-dark;
-      }
     }
 
     small {
       color: $global-font-secondary-color;
+    }
+  }
+}
 
-      .dark-theme & {
-        color: $global-link-hover-color-dark;
-      }
+@media (prefers-color-scheme: dark) {
+  .tag-clouds-tags a {
+    &:active,
+    &:focus,
+    &:hover {
+      color: $global-link-hover-color-dark;
+    }
+
+    small {
+      color: $global-link-hover-color-dark;
     }
   }
 }

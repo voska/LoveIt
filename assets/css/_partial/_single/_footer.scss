@@ -5,10 +5,6 @@
     border-bottom: 1px solid $global-border-color;
     padding: 1rem 0 0.3rem;
 
-    .dark-theme & {
-      border-bottom: 1px solid $global-border-color-dark;
-    }
-
     .post-info-line {
       display: flex;
       justify-content: space-between;
@@ -17,23 +13,11 @@
         font-size: 0.8em;
         color: $global-font-secondary-color;
 
-        .dark-theme & {
-          color: $global-font-secondary-color-dark;
-        }
-
         a {
           color: $single-link-color;
 
-          .dark-theme & {
-            color: $single-link-color-dark;
-          }
-
           &:hover {
             color: $single-link-hover-color;
-
-            .dark-theme & {
-              color: $single-link-hover-color-dark;
-            }
           }
         }
       }
@@ -41,10 +25,6 @@
       .post-info-license {
         font-size: 0.8em;
         color: $global-font-secondary-color;
-
-        .dark-theme & {
-          color: $global-font-secondary-color-dark;
-        }
       }
 
       .post-info-md {
@@ -54,14 +34,40 @@
         a {
           color: $single-link-color;
 
-          .dark-theme & {
-            color: $single-link-color-dark;
-          }
-
           &:hover {
             color: $single-link-hover-color;
+          }
+        }
+      }
+    }
+  }
 
-            .dark-theme & {
+  @media (prefers-color-scheme: dark) {
+    .post-info {
+      border-bottom: 1px solid $global-border-color-dark;
+
+      .post-info-line {
+        .post-info-mod {
+          color: $global-font-secondary-color-dark;
+
+          a {
+            color: $single-link-color-dark;
+
+            &:hover {
+              color: $single-link-hover-color-dark;
+            }
+          }
+        }
+
+        .post-info-license {
+          color: $global-font-secondary-color-dark;
+        }
+
+        .post-info-md {
+          a {
+            color: $single-link-color-dark;
+
+            &:hover {
               color: $single-link-hover-color-dark;
             }
           }

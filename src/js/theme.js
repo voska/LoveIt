@@ -49,17 +49,6 @@
             }
         }
 
-        initSwitchTheme() {
-            this.util.forEach(document.getElementsByClassName('theme-switch'), (button) => {
-                button.onclick = () => {
-                    document.body.classList.toggle('dark-theme');
-                    window.isDark = !window.isDark;
-                    window.localStorage && window.localStorage.setItem('theme', window.isDark ? 'dark' : 'light');
-                    this.initEcharts();
-                };
-            });
-        }
-
         initHighlight() {
             this.util.forEach(document.querySelectorAll('.highlight > .chroma'), (block) => {
                 const codes = block.querySelectorAll('pre.chroma > code');

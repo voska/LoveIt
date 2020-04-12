@@ -54,17 +54,17 @@
     color: $global-link-hover-color;
     background-color: transparent;
   }
+}
 
-  .dark-theme & {
-    color: $global-link-color-dark;
+@media (prefers-color-scheme: dark) {
+  color: $global-link-color-dark;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+
+  &:hover {
+    color: $global-link-hover-color-dark;
     text-decoration: none;
     transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
-
-    &:hover {
-      color: $global-link-hover-color-dark;
-      text-decoration: none;
-      transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
-    }
   }
 }
 
@@ -72,8 +72,10 @@
   float: right;
   text-align: right;
   color: $global-font-secondary-color;
+}
 
-  .dark-theme & {
+@media (prefers-color-scheme: dark) {
+  .archive-item-date {
     color: $global-font-secondary-color-dark;
   }
 }

@@ -1,5 +1,4 @@
-.dark-theme {
-  // copied from https://github.com/xCss/Valine/issues/221
+@media (prefers-color-scheme: dark) {
   .v *,
   .v .vwrap input,
   .v .vwrap input::placeholder,

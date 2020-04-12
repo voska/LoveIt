@@ -67,8 +67,10 @@ details.admonition {
       top: .5rem;
       right: .5rem;
       color: $global-font-color;
+    }
 
-      .dark-theme & {
+    @media (prefers-color-scheme: dark) {
+     i.details {
         color: $global-font-color-dark;
       }
     }

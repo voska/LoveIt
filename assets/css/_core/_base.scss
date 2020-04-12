@@ -20,10 +20,8 @@ html {
   }
 }
 
-::selection {
-  background: $selection-color;
-
-  .dark-theme & {
+@media (prefers-color-scheme: dark) {
+  ::selection {
     background: $selection-color-dark;
   }
 }
@@ -51,8 +49,10 @@ body {
     filter: grayscale(100%);
     filter: gray;
   }
+}
 
-  &.dark-theme {
+@media (prefers-color-scheme: dark) {
+  body {
     color: $global-font-color-dark;
     background-color: $global-background-color-dark;
   }
@@ -65,8 +65,10 @@ a {
   &:hover {
     color: $global-link-hover-color;
   }
+}
 
-  .dark-theme & {
+@media (prefers-color-scheme: dark) {
+  a {
     color: $global-link-color-dark;
 
     &:hover {

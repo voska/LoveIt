@@ -28,21 +28,6 @@
         {{- partial "head/seo.html" . -}}
     </head>
     <body>
-        {{- /* Check theme isDark before body rendering */ -}}
-        <script>
-            if (!window.localStorage || !window.localStorage.getItem('theme')) {
-                {{- $theme := .Site.Params.defaultTheme -}}
-                {{- if eq $theme "auto" -}}
-                    window.isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                {{- else -}}
-                    window.isDark = '{{ $theme }}' === 'dark';
-                {{- end -}}
-            } else {
-                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
-            }
-            window.isDark && document.body.classList.add('dark-theme');
-        </script>
-
         {{- /* Body wrapper */ -}}
         <div class="wrapper">
             {{- partial "header.html" . -}}

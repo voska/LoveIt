@@ -3,10 +3,6 @@ header {
   z-index: 100;
   background-color: $header-background-color;
 
-  .dark-theme & {
-    background-color: $header-background-color-dark;
-  }
-
   .header-title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -38,6 +34,12 @@ header {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: $header-background-color-dark;
+  }
+}
+
 #header-desktop {
   display: block;
   position: $header-position-desktop;
@@ -63,12 +65,14 @@ header {
       a.active {
         font-weight: 900;
         color: $header-hover-color;
-
-        .dark-theme & {
-          color: $header-hover-color-dark;
-        }
       }
     }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #header-desktop .header-wrapper .menu a.active {
+    color: $header-hover-color-dark;
   }
 }
 
@@ -109,10 +113,6 @@ header {
           -moz-transition: .1s margin .1s, .1s transform;
           -o-transition: .1s margin .1s, .1s transform;
           transition: .1s margin .1s, .1s transform;
-
-          .dark-theme & {
-            background: $global-font-color-dark;
-          }
         }
 
         span:nth-child(1) {
@@ -169,11 +169,18 @@ header {
       &.active {
         display: block;
       }
+    }
+  }
+}
 
-      .dark-theme & {
-        background: $global-background-color-dark;
-        border-top: 2px solid $global-font-color-dark;
-      }
+@media (prefers-color-scheme: dark) {
+  #header-mobile .header-wrapper {
+    .header-container .menu-toggle span {
+      background: $global-font-color-dark;
+    }
+    .menu {
+      background: $global-background-color-dark;
+      border-top: 2px solid $global-font-color-dark;
     }
   }
 }

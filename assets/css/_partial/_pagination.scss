@@ -34,10 +34,6 @@
       color: $pagination-link-hover-color;
     }
 
-    .dark-theme &:hover a {
-      color: $pagination-link-hover-color-dark;
-    }
-
     &:before,
     &:after {
       position: absolute;
@@ -47,11 +43,6 @@
       background: $pagination-link-hover-color;
       transition: 0.3s;
       bottom: 0px;
-    }
-
-    .dark-theme &:before,
-    .dark-theme &:after {
-      background: $pagination-link-hover-color-dark;
     }
 
     &:before .active,
@@ -80,14 +71,27 @@
         color: $pagination-link-hover-color;
       }
 
-      .dark-theme & a {
-        color: $pagination-link-hover-color-dark;
-      }
-
       &:before,
       &:after {
         width: 60%;
       }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .pagination li {
+    &:hover a {
+      color: $pagination-link-hover-color-dark;
+    }
+
+    &:before,
+    &:after {
+      background: $pagination-link-hover-color-dark;
+    }
+
+    &.active a {
+      color: $pagination-link-hover-color-dark;
     }
   }
 }
