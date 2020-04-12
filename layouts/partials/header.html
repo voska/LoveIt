@@ -12,7 +12,6 @@
                     {{- .Pre | safeHTML }}{{ .Name -}}
                 </a>
             {{- end -}}
-            <span class="menu-item">|</span>
             {{- if .Site.IsMultiLingual -}}
                 <a href="javascript:void(0);" class="menu-item" title="{{ T "selectLanguage" }}">
                     {{- .Language.LanguageName -}}
