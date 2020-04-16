@@ -16,6 +16,8 @@
             {{- end -}}
         </h2>
 
+        {{ .Content }}
+
         {{- /* Paginate */ -}}
         {{- range (.Paginate (.Pages.GroupByDate "2006")).PageGroups -}}
             <h3>{{ .Key }}</h3>
