@@ -2,19 +2,19 @@
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/dillonzq/LoveIt?style=flat-square)](https://github.com/dillonzq/LoveIt/releases)
 [![Hugo](https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
-[![License](https://img.shields.io/github/license/dillonzq/LoveIt?style=flat-square)](https://github.com/dillonzq/LoveIt/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/voska/LoveIt?style=flat-square)](https://github.com/voska/LoveIt/blob/master/LICENSE)
 [![CircleCI](https://img.shields.io/circleci/build/github/dillonzq/LoveIt/develop?label=CI&style=flat-square&logo=circleci)](https://app.circleci.com/pipelines/github/dillonzq/LoveIt)
 
-English README | [中文说明](README.zh-cn.md)
+English README
 
 **LoveIt** is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/).
 
-It is based on the original [LeaveIt Theme](https://github.com/liuzc/LeaveIt/) and [KeepIt Theme](https://github.com/liuzc/LeaveIt/).
+It is based on the original [LoveIt Theme](https://github/dillonzq/LoveIt) and [LeaveIt Theme](https://github.com/liuzc/LeaveIt/) and [KeepIt Theme](https://github.com/liuzc/LeaveIt/).
 
 Since the three themes have a similar look, if you have questions about their differences,
 read [Why choose LoveIt](#why-choose-loveit) so that you can choose the one that works best for you.
 
-![Hugo Theme LoveIt](https://github.com/dillonzq/LoveIt/raw/develop/images/Apple-Devices-Preview.png)
+![Hugo Theme LoveIt](https://github.com/voska/LoveIt/raw/develop/images/Apple-Devices-Preview.png)
 
 ## [Demo Site](https://hugoloveit.com/)
 
@@ -111,14 +111,15 @@ I hope you will LoveIt ❤️!
 
 ## Questions, ideas, bugs, pull requests
 
-All feedback is welcome! Head over to the [issue tracker](https://github.com/dillonzq/LoveIt/issues).
+All feedback is welcome! Head over to the [issue tracker](https://github.com/voska/LoveIt/issues).
 
 ## License
 
-LoveIt is licensed under the MIT license. Check the [LICENSE file](https://github.com/dillonzq/LoveIt/blob/master/LICENSE) for details.
+LoveIt is licensed under the MIT license. Check the [LICENSE file](https://github.com/voska/LoveIt/blob/master/LICENSE) for details.
 
 Thanks to the authors of following resources included in the theme:
 
+* [Original LoveIt Theme](https://dillonzq.com)
 * [Font Awesome](https://fontawesome.com/)
 * [Fork Awesome](https://forkaweso.me/Fork-Awesome/)
 * [Animate.css](https://daneden.github.io/animate.css/)
@@ -134,6 +135,5 @@ Thanks to the authors of following resources included in the theme:
 * [Gitalk](https://github.com/gitalk/gitalk)
 * [Valine](https://valine.js.org/)
 
-## Author
-
-[Dillon](https://dillonzq.com)
+## Authors
+[Matt Voska](https://www.voska.org)

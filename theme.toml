@@ -3,7 +3,7 @@
 
 name = "LoveIt"
 license = "MIT"
-licenselink = "https://github.com/dillonzq/LoveIt/blob/master/LICENSE"
+licenselink = "https://github.com/voska/LoveIt/blob/master/LICENSE"
 description = "A Clean, Elegant but Advanced Hugo Theme for Hugo."
 homepage = "https://hugo-loveit-en.netlify.com"
 tags = [
@@ -25,8 +25,8 @@ features = [
 min_version = "0.62.0"
 
 [author]
-  name = "Dillon"
-  homepage = "https://dillonzq.com/"
+  name = "Matt Voska"
+  homepage = "https://www.voska.org/"
 
 [original]
   name = "Fastbyte01"
