@@ -184,8 +184,6 @@ Note that some of these parameters are explained in details in other sections of
   description = "This is My New Hugo Site"
   # site keywords
   keywords = ["Theme", "Hugo"]
-  # site default theme ("light", "dark", "auto")
-  defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
   gitRepo = ""
   # LoveIt :(fas fa-greater-than-equal): :(far fa-file-archive): v0.1.1

@@ -89,8 +89,6 @@ enableEmoji = true
         description = "About LoveIt Theme"
         # site keywords
         keywords = ["Theme", "Hugo"]
-        # site default theme ("light", "dark", "auto")
-        defaultTheme = "auto"
         # Home Page Info
         [languages.en.params.home]
           # Home Page Profile
@@ -311,8 +309,6 @@ enableEmoji = true
       description = "关于 LoveIt 主题"
       # 网站关键词
       keywords = ["Theme", "Hugo"]
-      # 网站默认主题 ("light", "dark", "auto")
-      defaultTheme = "auto"
       # 主页信息设置
       [languages.zh-cn.params.home]
         # 主页个人信息
@@ -533,8 +529,6 @@ enableEmoji = true
         description = "À propos du thème LoveIt"
         # site keywords
         keywords = ["Thème", "Hugo"]
-        # site default theme ("light", "dark", "auto")
-        defaultTheme = "auto"
         # Home Page Info
         [languages.fr.params.home]
           # Home Page Profile
