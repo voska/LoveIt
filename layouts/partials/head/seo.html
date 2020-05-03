@@ -101,7 +101,7 @@
                 "name": "{{ . | safeJS }}"
             },
         {{- end -}}
-        "description": "{{ .Description | safeHTML }}"
+        "description": {{ .Description | safeHTML }}
     }
     </script>
 {{- end -}}
