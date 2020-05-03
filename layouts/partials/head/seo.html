@@ -31,7 +31,7 @@
             },
         {{- end -}}
         {{- with .Site.Params.description -}}
-            "description": "{{ . | safeJS }}",
+            "description": {{ . | safeHTML }},
         {{- end -}}
         {{- with .Site.Params.image -}}
             "image": "{{ .url | absURL }}",
@@ -101,7 +101,7 @@
                 "name": "{{ . | safeJS }}"
             },
         {{- end -}}
-        "description": "{{ .Description | safeJS }}"
+        "description": "{{ .Description | safeHTML }}"
     }
     </script>
 {{- end -}}
