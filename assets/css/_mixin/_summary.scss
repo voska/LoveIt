@@ -5,7 +5,7 @@
     color: $global-font-color;
     border-bottom: 1px dashed $global-border-color;
 
-    [theme=dark] & {
+    @media (prefers-color-scheme: dark) {
       color: $global-font-color-dark;
       border-bottom: 1px dashed $global-border-color-dark;
     }
@@ -47,7 +47,7 @@
       @include overflow-wrap(break-word);
       color: $global-font-secondary-color;
 
-      [theme=dark] & {
+      @media (prefers-color-scheme: dark) {
         color: $global-font-secondary-color-dark;
       }
 
@@ -76,7 +76,7 @@
       b, strong {
         color: $global-font-secondary-color;
 
-        [theme=dark] & {
+        @media (prefers-color-scheme: dark) {
           color: $global-font-secondary-color-dark;
         }
       }

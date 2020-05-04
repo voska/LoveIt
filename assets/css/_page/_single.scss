@@ -130,13 +130,17 @@
     a {
       @include overflow-wrap(break-word);
 
-      [theme=dark] & b, [theme=dark] & strong {
-        color: $single-link-color-dark;
+      @media (prefers-color-scheme: dark) {
+        b, strong {
+          color: $single-link-color-dark;
+        }
       }
     }
 
-    [theme=dark] a:hover b, [theme=dark] a:hover strong {
-      color: $single-link-hover-color-dark;
+    @media (prefers-color-scheme: dark) {
+      a:hover b, a:hover strong {
+        color: $single-link-hover-color-dark;
+      }
     }
 
     ul, ol {
