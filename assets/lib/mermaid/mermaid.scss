@@ -8,6 +8,10 @@
   }
 
   @import "themes/neutral/index";
+
+  div.mermaidTooltip {
+    z-index: 50;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

@@ -7,7 +7,7 @@
 
 English README
 
-**LoveIt** is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/).
+> **LoveIt** is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/).
 
 It is based on the original [LoveIt Theme](https://github/dillonzq/LoveIt) and [LeaveIt Theme](https://github.com/liuzc/LeaveIt/) and [KeepIt Theme](https://github.com/liuzc/LeaveIt/).
 
@@ -31,16 +31,21 @@ Compared to the original LeaveIt theme and the KeepIt theme, the LoveIt theme ha
 * More readable **dark mode**
 * Some beautiful **CSS animations**
 * Easy-to-use and self-expanding **table of contents**
-* Extended markdown syntax for **[Font Awesome](https://fontawesome.com/) icons**
-* Extended markdown syntax for **ruby annotation**
-* **Mathematical formula** support by [KaTeX](https://katex.org/)
-* **Diagram syntax** shortcode support by [mermaid](https://github.com/knsv/mermaid)
+* More **social links**, **share sites** and **comment system**
+* **Search** supported by [Lunr.js](https://lunrjs.com/) or [algolia](https://www.algolia.com/)
+* **Copy code** to clipboard with one click
+* Extended Markdown syntax for **[Font Awesome](https://fontawesome.com/) icons**
+* Extended Markdown syntax for **ruby annotation**
+* Extended Markdown syntax for **fraction**
+* **Mathematical formula** supported by [KaTeX](https://katex.org/)
+* **Diagram syntax** shortcode supported by [mermaid](https://github.com/knsv/mermaid)
 * **Interactive data visualization** shortcode supported by [ECharts](https://echarts.apache.org/)
-* Embedded **music player** support by [APlayer](https://github.com/MoePlayer/APlayer) and [MetingJS](https://github.com/metowolf/MetingJS)
-* **Bilibili** player support
-* Kinds of **admonitions** shortcode support
-* Custom style shortcodes support
-* **CDN** for all third-party libraries support
+* **Mapbox** shortcode supported by [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js)
+* Embedded **music player** supported by [APlayer](https://github.com/MoePlayer/APlayer) and [MetingJS](https://github.com/metowolf/MetingJS)
+* **Bilibili** player supported
+* Kinds of **admonitions** shortcode supported
+* Custom style shortcodes supported
+* **CDN** for all third-party libraries supported
 * ...
 
 In short,
@@ -57,41 +62,49 @@ I hope you will LoveIt ❤️!
 
 * Optimized for **performance**: 99/100 on mobile and 100/100 on desktop in [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights)
 * Optimized SEO performance with a correct **SEO SCHEMA** based on JSON-LD
-* [**Google Analytics**](https://analytics.google.com/analytics) support
-* Search engine **verification** support (Google, Bind, Yandex and Baidu)
-* **CDN** for third-party libraries support
+* **[Google Analytics](https://analytics.google.com/analytics)** supported
+* **[Fathom Analytics](https://usefathom.com/)** supported
+* Search engine **verification** supported (Google, Bind, Yandex and Baidu)
+* **CDN** for third-party libraries supported
 * Automatically converted images with **Lazy Load** by [lazysizes](https://github.com/aFarkas/lazysizes)
 
 ### Appearance and Layout
 
 * **Responsive** layout
-* **Dark/Light** mode
+* **Light/Dark** mode
 * Globally consistent **design language**
-* **Pagination** support
+* **Pagination** supported
 * Easy-to-use and self-expanding **table of contents**
-* **Multilanguage** support and i18n ready
+* **Multilanguage** supported and i18n ready
 * Beautiful **CSS animation**
 
 ### Social and Comment Systems
 
 * **Gravatar** supported by [Gravatar](https://gravatar.com)
-* Local **Avatar** support
-* Up to **59** social sites supported
-* Up to **28** share sites support
+* Local **Avatar** supported
+* Up to **64** social links supported
+* Up to **28** share sites supported
 * **Disqus** comment system supported by [Disqus](https://disqus.com)
 * **Gitalk** comment system supported by [Gitalk](https://github.com/gitalk/gitalk)
 * **Valine** comment system supported by [Valine](https://valine.js.org/)
 * **Facebook comments** system supported by [Facebook](https://developers.facebook.com/docs/plugins/comments/)
+* **Telegram comments** system supported by [Telegram Comments](https://comments.app/)
+* **Commento** comments system supported by [Commento](https://commento.io/)
 
 ### Extended Features
 
+* **Search** supported by [Lunr.js](https://lunrjs.com/) or [algolia](https://www.algolia.com/)
+* **Twemoji** supported
 * Automatically **highlighting** code
+* **Copy code** to clipboard with one click
 * **Images gallery** supported by [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)
-* Extended markdown syntax for **[Font Awesome](https://fontawesome.com/) icons**
-* Extended markdown syntax for **ruby annotation**
+* Extended Markdown syntax for **[Font Awesome](https://fontawesome.com/) icons**
+* Extended Markdown syntax for **ruby annotation**
+* Extended Markdown syntax for **fraction**
 * **Mathematical formula** supported by [KaTeX](https://katex.org/)
 * **Diagrams** shortcode supported by [mermaid](https://github.com/knsv/mermaid)
 * **Interactive data visualization** shortcode supported by [ECharts](https://echarts.apache.org/)
+* **Mapbox** shortcode supported by [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js)
 * **Music player** shortcode supported by [APlayer](https://github.com/MoePlayer/APlayer) and [MetingJS](https://github.com/metowolf/MetingJS)
 * **Bilibili player** shortcode
 * Kinds of **admonitions** shortcode
@@ -100,14 +113,29 @@ I hope you will LoveIt ❤️!
 * **Dynamic scroll** supported by [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 * ...
 
-## Documentation
+## [Documentation](https://hugoloveit.com/categories/documentation/)
 
-* [Documentation Page](https://hugoloveit.com/categories/documentation/)
-* Build Documentation Locally:
+Build Documentation Locally:
 
-    ```bash
-    hugo server --source=exampleSite
-    ```
+```bash
+hugo server --source=exampleSite
+```
+
+## Multilingual and i18n
+
+LoveIt supports the following languages:
+
+* English
+* Simplified Chinese
+* French
+* Polish
+* Brazilian Portuguese
+* Italian
+* [Contribute with a new language](https://github.com/dillonzq/LoveIt/pulls)
+
+[Languages Compatibility](https://hugoloveit.com/theme-documentation-basics/#language-compatibility)
+
+## [Roadmap](https://github.com/dillonzq/LoveIt/projects/1)
 
 ## Questions, ideas, bugs, pull requests
 
@@ -120,16 +148,25 @@ LoveIt is licensed under the MIT license. Check the [LICENSE file](https://githu
 Thanks to the authors of following resources included in the theme:
 
 * [Original LoveIt Theme](https://dillonzq.com)
+* [normalize.css](https://github.com/necolas/normalize.css)
 * [Font Awesome](https://fontawesome.com/)
-* [Fork Awesome](https://forkaweso.me/Fork-Awesome/)
+* [Simple Icons](https://github.com/simple-icons/simple-icons)
 * [Animate.css](https://daneden.github.io/animate.css/)
-* [lazysizes](https://github.com/aFarkas/lazysizes)
-* [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)
 * [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+* [autocomplete.js](https://github.com/algolia/autocomplete.js)
+* [Lunr.js](https://lunrjs.com/)
+* [algoliasearch](https://github.com/algolia/algoliasearch-client-javascript)
+* [lazysizes](https://github.com/aFarkas/lazysizes)
+* [object-fit-images](https://github.com/fregante/object-fit-images)
+* [Twemoji](https://github.com/twitter/twemoji)
+* [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)
+* [clipboard.js](https://github.com/zenorocha/clipboard.js)
+* [Sharer.js](https://github.com/ellisonleao/sharer.js)
 * [TypeIt](https://typeitjs.com/)
 * [KaTeX](https://katex.org/)
 * [mermaid](https://github.com/knsv/mermaid)
 * [ECharts](https://echarts.apache.org/)
+* [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js)
 * [APlayer](https://github.com/MoePlayer/APlayer)
 * [MetingJS](https://github.com/metowolf/MetingJS)
 * [Gitalk](https://github.com/gitalk/gitalk)

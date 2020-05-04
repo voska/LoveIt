@@ -5,6 +5,13 @@
     border-bottom: 1px solid $global-border-color;
     padding: 1rem 0 0.3rem;
 
+<<<<<<< HEAD
+=======
+    [theme=dark] & {
+      border-bottom: 1px solid $global-border-color-dark;
+    }
+
+>>>>>>> pr/2
     .post-info-line {
       display: flex;
       justify-content: space-between;
@@ -13,6 +20,7 @@
         font-size: 0.8em;
         color: $global-font-secondary-color;
 
+<<<<<<< HEAD
         a {
           color: $single-link-color;
 
@@ -20,17 +28,32 @@
             color: $single-link-hover-color;
           }
         }
+=======
+        [theme=dark] & {
+          color: $global-font-secondary-color-dark;
+        }
+
+        @include link(false, false);
+>>>>>>> pr/2
       }
 
       .post-info-license {
         font-size: 0.8em;
         color: $global-font-secondary-color;
+<<<<<<< HEAD
+=======
+
+        [theme=dark] & {
+          color: $global-font-secondary-color-dark;
+        }
+>>>>>>> pr/2
       }
 
       .post-info-md {
         font-size: 0.8rem;
         width: 8rem;
 
+<<<<<<< HEAD
         a {
           color: $single-link-color;
 
@@ -71,6 +94,14 @@
               color: $single-link-hover-color-dark;
             }
           }
+=======
+        @include link(false, false);
+      }
+
+      .post-info-share {
+        a * {
+          vertical-align: text-bottom;
+>>>>>>> pr/2
         }
       }
     }
@@ -81,6 +112,14 @@
     display: flex;
     justify-content: space-between;
     font-size: 0.9rem;
+  }
+
+  .post-tags {
+    max-width: 65%;
+
+    * {
+      display: inline;
+    }
   }
 
   .post-nav {
@@ -94,10 +133,7 @@
     & a.next {
       font-size: 1rem;
       font-weight: 600;
-      -webkit-transition: all ease-out .3s;
-      -moz-transition: all ease-out .3s;
-      -o-transition: all ease-out .3s;
-      transition: all ease-out .3s;
+      @include transition(all 0.3s ease-out);
     }
 
     & a.prev {
@@ -105,11 +141,7 @@
     }
 
     & a.prev:hover {
-      -webkit-transform: translateX(-4px);
-      -moz-transform: translateX(-4px);
-      -ms-transform: translateX(-4px);
-      -o-transform: translateX(-4px);
-      transform: translateX(-4px);
+      @include transform(translateX(-4px));
     }
 
     & a.next {
@@ -117,11 +149,7 @@
     }
 
     & a.next:hover {
-      -webkit-transform: translateX(4px);
-      -moz-transform: translateX(4px);
-      -ms-transform: translateX(4px);
-      -o-transform: translateX(4px);
-      transform: translateX(4px);
+      @include transform(translateX(4px));
     }
   }
 }

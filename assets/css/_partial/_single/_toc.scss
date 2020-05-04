@@ -1,19 +1,72 @@
+.toc {
+  .toc-title {
+    font-size: $toc-title-font-size;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .toc-content {
+    font-size: $toc-content-font-size;
+
+    ul {
+      text-indent: -0.85rem;
+      padding-left: .8rem;
+      list-style: none;
+
+      a:first-child::before {
+        content: "|";
+        font-weight: bolder;
+        margin-right: .5rem;
+        color: $single-link-color;
+
+        @media (prefers-color-scheme: dark) {
+          color: $single-link-color-dark;
+        }
+      }
+
+      ul {
+        padding-left: 1.5rem;
+      }
+    }
+  }
+
+  ruby {
+    background: $code-background-color;
+
+    rt {
+      color: $global-font-secondary-color;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      background: $code-background-color-dark;
+
+      rt {
+        color: $global-font-secondary-color-dark;
+      }
+    }
+  }
+}
+
 #toc-auto {
   display: block;
   position: absolute;
-  width: 100%;
-  max-width: 1000px;
-  margin-left: 1000px;
+  width: $MAX_LENGTH;
   padding: 0 .8rem;
-  border-left: 1px solid $global-border-color;
-  overflow-wrap: break-word;
+  border-left: 4px solid $global-border-color;
+  @include overflow-wrap(break-word);
   box-sizing: border-box;
   top: if($header-normal-mode-desktop, 5rem, 10rem);
+  left: 0;
+  visibility: hidden;
+
+  @include blur;
+
+  @media (prefers-color-scheme: dark) {
+    border-left-color: $global-border-color-dark;
+  }
 
   .toc-title {
-    font-weight: 400;
     margin: .8rem 0;
-    text-transform: uppercase;
   }
 
   .toc-content {
@@ -21,30 +74,12 @@
       display: block;
     }
 
-    >nav>ul {
+    > nav > ul {
       margin: .625rem 0;
     }
 
     ul {
-      text-indent: -0.85rem;
-      padding-left: .625rem;
-      list-style: none;
-
-      a::before {
-        content: "|";
-        font-weight: bolder;
-        margin-right: .5rem;
-        color: $single-link-color;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        a::before {
-          color: $single-link-color-dark;
-        }
-      }
-
       ul {
-        padding-left: 1.25rem;
         display: none;
       }
 
@@ -57,16 +92,14 @@
       font-weight: bold;
       color: $single-link-color;
 
+      @media (prefers-color-scheme: dark) {
+        color: $single-link-color-dark;
+      }
+
       &::before {
         color: $single-link-hover-color;
-      }
-    }
 
-    @media (prefers-color-scheme: dark) {
-      a.active {
-        color: $single-link-color-dark;
-
-        &::before {
+        @media (prefers-color-scheme: dark) {
           color: $single-link-hover-color-dark;
         }
       }
@@ -74,53 +107,19 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  #toc-auto {
-    border-left: 1px solid $global-border-color-dark;
-  }
-}
-
 #toc-static {
   display: none;
-  padding-top: .8rem;
+  margin: .8rem 0;
 
-  details {
-    summary {
-      list-style: none;
-      background: darken($code-background-color, 3%);
-
-      .toc-title {
-        display: block;
-        display: flex;
-        justify-content: space-between;
-        font-weight: bold;
-        line-height: 2em;
-        padding: 0 .625rem;
-
-        i.details {
-          line-height: 2em;
-        }
-
-        &:hover {
-          cursor: pointer;
-        }
-      }
-
-      &::-webkit-details-marker {
-        display: none;
-      }
-    }
+  .toc-title {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2em;
+    padding: 0 .75rem;
+    background: darken($code-background-color, 6%);
 
     @media (prefers-color-scheme: dark) {
-      summary {
-        background: darken($code-background-color-dark, 3%);
-      }
-    }
-  }
-
-  details[open] {
-    i.details {
-      transform: rotate(180deg);
+      background: darken($code-background-color-dark, 6%);
     }
   }
 
@@ -129,48 +128,20 @@
 
     > nav > ul {
       margin: 0;
-      padding: .4rem .8rem;
+      padding: .4rem 1rem .4rem 1.8rem;
     }
 
-    ul {
-      list-style: none;
-
-      ul {
-        padding-left: 1.25rem;
-      }
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .toc-content {
+    @media (prefers-color-scheme: dark) {
       background-color: $code-background-color-dark;
     }
   }
-}
 
-.toc {
-  .toc-title {
-    font-size: $toc-title-font-size;
-  }
+  &.open {
+    .toc-title {
+      background: darken($code-background-color, 3%);
 
-  .toc-content {
-    font-size: $toc-content-font-size;
-  }
-
-  ruby {
-    background: $code-background-color;
-
-    rt {
-      color: $global-font-secondary-color;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    ruby {
-      background: $code-background-color-dark;
-
-      rt {
-        color: $global-font-secondary-color-dark;
+      @media (prefers-color-scheme: dark) {
+        background: darken($code-background-color-dark, 3%);
       }
     }
   }
