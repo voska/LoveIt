@@ -58,14 +58,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  color: $global-link-color-dark;
-  text-decoration: none;
-  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
-
-  &:hover {
-    color: $global-link-hover-color-dark;
+  .archive-item-link {
+    color: $global-link-color-dark;
     text-decoration: none;
     transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+
+    &:hover {
+      color: $global-link-hover-color-dark;
+      text-decoration: none;
+      transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+    }
   }
 }
 
