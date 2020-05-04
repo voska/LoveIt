@@ -1,6 +1,6 @@
 {{- $cdn := .Scratch.Get "cdn" | default dict -}}
 {{- $fingerprint := .Scratch.Get "fingerprint" -}}
-{{- $comment := .Scratch.Get "page.comment" | default (dict "disqus" dict "gitalk" dict "valine" dict "facebook" dict "telegram" dict "commento" dict) -}}
+{{- $comment := .Scratch.Get "comment" | default (dict "disqus" dict "gitalk" dict "valine" dict "facebook" dict "telegram" dict "commento" dict) -}}
 {{- $commentConfig := dict -}}
 
 {{- if $comment.enable -}}
