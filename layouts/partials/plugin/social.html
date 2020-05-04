@@ -72,7 +72,7 @@
 
 {{- /* Facebook */ -}}
 {{- with .Site.Params.Social.Facebook -}}
-    {{- $options := dict "href" (printf "https://facebook.com/%s" .) "title" "Facebook" "rel" "me" -}}
+    {{- $options := dict "href" (printf "https://www.facebook.com/%s" .) "title" "Facebook" "rel" "me" -}}
     {{- $options = dict "icon" (dict "class" "fab fa-facebook fa-fw") | merge $options -}}
     {{- partial "plugin/link.html" $options -}}
 {{- end -}}
@@ -142,7 +142,7 @@
 
 {{- /* Instagram */ -}}
 {{- with .Site.Params.Social.Instagram -}}
-    {{- $options := dict "href" (printf "https://www.instagram.com/%s" .) "title" "Instagram" "rel" "me" -}}
+    {{- $options := dict "href" (printf "https://www.instagram.com/%s/" .) "title" "Instagram" "rel" "me" -}}
     {{- $options = dict "icon" (dict "class" "fab fa-instagram fa-fw") | merge $options -}}
     {{- partial "plugin/link.html" $options -}}
 {{- end -}}
@@ -177,7 +177,7 @@
 
 {{- /* LinkedIn */ -}}
 {{- with .Site.Params.Social.LinkedIn -}}
-    {{- $options := dict "href" (printf "https://linkedin.com/in/%s" .) "title" "LinkedIn" "rel" "me" -}}
+    {{- $options := dict "href" (printf "https://www.linkedin.com/in/%s" .) "title" "LinkedIn" "rel" "me" -}}
     {{- $options = dict "icon" (dict "class" "fab fa-linkedin fa-fw") | merge $options -}}
     {{- partial "plugin/link.html" $options -}}
 {{- end -}}
