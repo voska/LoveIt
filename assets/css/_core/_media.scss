@@ -9,10 +9,6 @@
     width: 52%;
   }
 
-  #header-desktop .header-wrapper {
-    padding-right: 1rem;
-  }
-
   .search-dropdown.desktop {
     right: 1rem;
   }
@@ -27,12 +23,8 @@
     display: block;
   }
 
-  .page {
-    width: 80%;
-  }
-
-  #header-desktop .header-wrapper {
-    padding-left: 1rem;
+  .page, #header-desktop .header-wrapper {
+    width: 75%;
   }
 }
 

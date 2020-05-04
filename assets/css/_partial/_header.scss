@@ -147,7 +147,8 @@ header {
   line-height: $header-height;
 
   .header-wrapper {
-    padding: 0 2rem 0 10vh;
+    margin: auto;
+    width: 65%;
 
     .header-title {
       font-size: $header-title-font-size;
