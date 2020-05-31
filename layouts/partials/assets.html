@@ -177,7 +177,7 @@
     <style>{{ delimit . "" | safeCSS }}</style>
 {{- end -}}
 
-<script type="text/javascript">
+<script>
     window.config = {{ $config | jsonify | safeJS }};
 </script>
 

@@ -1,7 +1,7 @@
 {{- if .enable -}}
     {{- /* Google Analytics */ -}}
     {{- with .google.id -}}
-        <script type="text/javascript">
+        <script>
             window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
             ga('create', '{{ . }}', {{- if $.google.cookie }}'auto'{{ else }}{ 'storage': 'none' }{{ end }});
             {{- if $.google.anonymizeIP }}ga('set', 'anonymizeIp', true);{{ end -}}
@@ -12,7 +12,7 @@
 
     {{- /* Fathom Analytics */ -}}
     {{- with .fathom.id -}}
-        <script type="text/javascript">
+        <script>
             window.fathom=window.fathom||function(){(fathom.q=fathom.q||[]).push(arguments)};
             fathom('set', 'siteId', '{{ . }}');
             fathom('trackPageview');
