@@ -1,10 +1,10 @@
 {{- $content := .content -}}
 
-{{- if .ruby -}}
-    {{- $content = partial "function/ruby.html" $content -}}
-{{- end -}}
-
 {{- if ne "" $content -}}
+
+  {{- if .ruby -}}
+      {{- $content = partial "function/ruby.html" $content -}}
+  {{- end -}}
 
   {{- if .fraction -}}
       {{- $content = partial "function/fraction.html" $content -}}
@@ -18,6 +18,6 @@
 
   {{- $content = partial "function/escape.html" $content -}}
 
-{{- return $content -}}
-
 {{- end -}}
+
+{{- return $content -}}
